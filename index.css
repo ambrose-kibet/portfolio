@@ -1,0 +1,113 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@import url("https://fonts.googleapis.com/css?family=Crete+Round:400");
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:400");
+header {
+  background: #3c3a39;
+}
+nav {
+  display: flex;
+  padding: 0.5rem 24px;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-logo {
+  color: white;
+  text-transform: capitalize;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+.nav-btn {
+  color: white;
+  background: transparent;
+  border: none;
+  font-size: 18px;
+}
+.main {
+  background: #1c1a19;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.home-section {
+  max-width: 375px;
+  margin: 0;
+}
+.section-title {
+  font-family: "Crete Round";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: 0.37px;
+  color: #ff6b00;
+  text-transform: capitalize;
+  margin: auto 24px;
+}
+.info-title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  color: #fff5e1;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 4px 24px;
+}
+
+.info {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  margin: 4px 24px;
+}
+.links-container {
+  display: flex;
+  padding: 4px 12px;
+}
+.links-container a {
+  height: 17px;
+  color: white;
+  text-decoration: none;
+  align-items: flex-start;
+  padding: 0px 8px;
+}
+.decor-img {
+  position: absolute;
+  left: 60.64%;
+  right: 17.16%;
+  top: 59.26%;
+  bottom: 20.28%;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12.8518px;
+  line-height: 16px;
+
+  color: #000000;
+  /* transform: ;
+  transform: matrix(-0.96, 0.27, 0.27, 0.96, 0, 0); */
+}
