@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Crete+Round:400");
 @import url("https://fonts.googleapis.com/css?family=Poppins:400");
+
 *,
 ::after,
 ::before {
@@ -19,7 +20,7 @@ nav {
 .nav-logo {
   color: white;
   text-transform: capitalize;
-  font-family: "Roboto Sans-serif";
+  font-family: "Roboto", Sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -45,7 +46,7 @@ nav {
   margin: 0;
 }
 .section-title {
-  font-family: "Crete Round Sans-serif";
+  font-family: "Crete Round", Sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 56px;
@@ -56,7 +57,7 @@ nav {
   margin: auto 24px;
 }
 .info-title {
-  font-family: "Roboto Sans-serif";
+  font-family: "Roboto", Sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -71,7 +72,7 @@ nav {
 }
 
 .info {
-  font-family: "Poppins Sans-serif";
+  font-family: "Poppins", Sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -99,14 +100,10 @@ nav {
   right: 17.16%;
   top: 59.26%;
   bottom: 20.28%;
-
-  font-family: "Inter Sans-serif";
+  font-family: "Inter", Sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12.8518px;
   line-height: 16px;
-
   color: #000000;
-  /* transform: ;
-  transform: matrix(-0.96, 0.27, 0.27, 0.96, 0, 0); */
 }
