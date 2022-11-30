@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Crete+Round:400");
+@import url("https://fonts.googleapis.com/css?family=Poppins:400");
 *,
 ::after,
 ::before {
@@ -5,9 +7,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-@import url("https://fonts.googleapis.com/css?family=Crete+Round:400");
-
-@import url("https://fonts.googleapis.com/css?family=Poppins:400");
 header {
   background: #3c3a39;
 }
@@ -20,7 +19,7 @@ nav {
 .nav-logo {
   color: white;
   text-transform: capitalize;
-  font-family: "Roboto";
+  font-family: "Roboto Sans-serif";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -46,7 +45,7 @@ nav {
   margin: 0;
 }
 .section-title {
-  font-family: "Crete Round";
+  font-family: "Crete Round Sans-serif";
   font-style: normal;
   font-weight: 400;
   font-size: 56px;
@@ -57,7 +56,7 @@ nav {
   margin: auto 24px;
 }
 .info-title {
-  font-family: "Roboto";
+  font-family: "Roboto Sans-serif";
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -72,12 +71,12 @@ nav {
 }
 
 .info {
-  font-family: "Poppins";
+  font-family: "Poppins Sans-serif";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #ffffff;
+  color: #fff;
   flex: none;
   order: 2;
   flex-grow: 0;
@@ -92,7 +91,7 @@ nav {
   color: white;
   text-decoration: none;
   align-items: flex-start;
-  padding: 0px 8px;
+  padding: 0.01rem 8px;
 }
 .decor-img {
   position: absolute;
@@ -101,7 +100,7 @@ nav {
   top: 59.26%;
   bottom: 20.28%;
 
-  font-family: "Inter";
+  font-family: "Inter Sans-serif";
   font-style: normal;
   font-weight: 400;
   font-size: 12.8518px;
