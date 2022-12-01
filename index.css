@@ -110,3 +110,183 @@ nav {
   padding: 0.01rem 8px;
   list-style-type: none;
 }
+
+.section-container {
+  background: #e5e5e5;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 327px;
+  display: flexbox;
+}
+
+.projects-title {
+  font-family: "Crete Round", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  margin: 6px auto;
+  padding-bottom: 24px;
+  margin-bottom: 80px;
+  margin-top: 104px;
+  border-bottom: 1px solid #212121;
+  color: #1c1a19;
+}
+
+.project-card .card-header {
+  width: 100%;
+  height: 237px;
+}
+
+.card-header-img {
+  width: 100%;
+  height: 100%;
+}
+
+.card-title {
+  font-family: "Crete Round", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  margin: 6px auto;
+  color: #091e42;
+}
+
+.card-info {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  margin: 4px auto;
+  color: #091e42;
+}
+
+.card-body .tech-container,
+.card-variant-body .tech-container {
+  width: 100%;
+  margin: 24px auto;
+}
+
+.tech {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 12.5px 12px;
+  color: #091e42;
+  background: #fff;
+  border: 1px solid #8993a4;
+  margin: auto 12px auto auto;
+}
+
+.btn {
+  padding: 12px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
+  background: #ff6b00;
+  border: none;
+}
+
+.btn:hover {
+  border: 1px solid #f55800;
+  color: #f55800;
+  background: #fff5e1;
+}
+
+.btn:active {
+  background: #e05304;
+  color: #fff;
+}
+
+.btn:disabled {
+  background: #f4f1f0;
+  color: #5b5957;
+}
+.btn-block {
+  width: 100%;
+  text-align: center;
+}
+.project-card-variant {
+  background-image: url("/assets/card-bg.png");
+  min-height: 386px;
+  margin: 24px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-variant-body {
+  width: 295px;
+  margin: auto;
+}
+
+.card-variant-body h2,
+.card-variant-body p {
+  color: #fff;
+}
+
+.card-variant-body .card-title {
+  margin-top: 60px;
+}
+
+.card-variant-body .tech-container .tech {
+  background: rgba(255, 255, 255, 0.24);
+  color: #fff;
+}
+
+.about-section {
+  background: #1c1a19;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-image: url("./assets/about-bg.png");
+  background-position-x: 100%;
+  background-position-y: 100%;
+  background-repeat: no-repeat;
+}
+
+.about-title,
+.about-info {
+  margin: 24px 0;
+}
+
+.skills-section {
+  min-height: 1150px;
+  background: #1c1a19;
+}
+
+.languages {
+  text-align: center;
+}
+
+.generic-title {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  margin: 6px auto;
+  color: #fff;
+}
+
+.generic-info {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 43px;
+  margin: 5.5px auto;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
