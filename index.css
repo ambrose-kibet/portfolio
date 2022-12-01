@@ -8,7 +8,8 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+body {
+}
 header {
   background: #3c3a39;
 }
@@ -28,6 +29,7 @@ nav {
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
+  text-decoration: none;
 }
 
 .nav-btn {
@@ -39,12 +41,16 @@ nav {
 
 .main {
   background: #1c1a19;
-  min-height: 100vh;
+  min-height: calc(100vh - 40px);
   margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  background-image: url("./assets//Group.png");
+  background-position-x: 100%;
+  background-position-y: 111.63%;
+  background-repeat: no-repeat;
 }
 
 .home-section {
@@ -103,6 +109,7 @@ nav {
   text-decoration: none;
   align-items: flex-start;
   padding: 0.01rem 8px;
+  list-style-type: none;
 }
 
 .decor-img {
