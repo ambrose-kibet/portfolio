@@ -8,8 +8,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
-}
+
 header {
   background: #3c3a39;
 }
@@ -110,18 +109,4 @@ nav {
   align-items: flex-start;
   padding: 0.01rem 8px;
   list-style-type: none;
-}
-
-.decor-img {
-  position: absolute;
-  left: 60.64%;
-  right: 17.16%;
-  top: 59.26%;
-  bottom: 20.28%;
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12.8518px;
-  line-height: 16px;
-  color: #000;
 }
