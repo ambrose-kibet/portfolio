@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css?family=Crete+Round:400");
+@import url("https://fonts.googleapis.com/css?family=Poppins:400");
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background: #3c3a39;
+}
+
+nav {
+  display: flex;
+  padding: 0.5rem 24px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  color: white;
+  text-transform: capitalize;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+.nav-btn {
+  color: white;
+  background: transparent;
+  border: none;
+  font-size: 18px;
+}
+
+.main {
+  background: #1c1a19;
+  min-height: calc(100vh - 40px);
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-image: url("./assets//Group.png");
+  background-position-x: 100%;
+  background-position-y: 111.63%;
+  background-repeat: no-repeat;
+}
+
+.home-section {
+  max-width: 375px;
+  margin: 0;
+}
+
+.section-title {
+  font-family: "Crete Round", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: 0.37px;
+  color: #ff6b00;
+  text-transform: capitalize;
+  margin: auto 24px;
+}
+
+.info-title {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  color: #fff5e1;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 4px 24px;
+}
+
+.info {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  margin: 4px 24px;
+}
+
+.links-container {
+  display: flex;
+  padding: 4px 12px;
+}
+
+.links-container a {
+  height: 17px;
+  color: white;
+  text-decoration: none;
+  align-items: flex-start;
+  padding: 0.01rem 8px;
+  list-style-type: none;
+}
