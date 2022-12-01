@@ -210,10 +210,12 @@ nav {
   background: #f4f1f0;
   color: #5b5957;
 }
+
 .btn-block {
   width: 100%;
   text-align: center;
 }
+
 .project-card-variant {
   background-image: url("/assets/card-bg.png");
   min-height: 386px;
