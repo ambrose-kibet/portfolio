@@ -114,7 +114,7 @@ nav {
 .section-container {
   background: #e5e5e5;
   min-height: 100vh;
-  display: flex;
+  display: grid;
   align-items: center;
   justify-content: center;
 }
@@ -217,7 +217,7 @@ nav {
 }
 
 .project-card-variant {
-  background-image: url("/assets/card-bg.png");
+  background-image: url("./assets/card-bg.png");
   min-height: 386px;
   margin: 24px auto;
   display: flex;
@@ -291,4 +291,8 @@ nav {
   align-items: center;
   text-align: center;
   color: #fff;
+}
+
+ul {
+  list-style-type: none;
 }
