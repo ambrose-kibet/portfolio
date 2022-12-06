@@ -296,3 +296,83 @@ nav {
 ul {
   list-style-type: none;
 }
+
+.contact-section {
+  min-height: 856px;
+  position: relative;
+}
+
+.contact-info {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  text-align: center;
+  color: #172b4d;
+  margin-bottom: 32px;
+}
+
+.contact-form {
+  width: 100%;
+  margin-top: 32px;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+}
+
+.form-input {
+  padding: 14.5px;
+  border: none;
+  border-bottom: 2pt solid #dbd8d7;
+  width: 100%;
+  background: transparent;
+  margin: 12px auto;
+}
+
+.form-input::placeholder {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  color: #979493;
+}
+
+.textarea {
+  min-height: 114px;
+  background: #fbf8f7;
+  border: none;
+}
+
+.textarea ::placeholder {
+  color: #242323;
+}
+
+.btn-center {
+  margin: 24px auto;
+}
+
+footer {
+  min-height: 80px;
+  background: #e5e5e5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-variant {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-variant li {
+  padding: auto 10.5px;
+}
+
+.underline {
+  margin: 23px auto 8px auto;
+  height: 5px;
+  width: 134px;
+  background: #0d151e;
+  border-radius: 10px;
+}
