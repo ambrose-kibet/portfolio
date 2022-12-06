@@ -75,6 +75,12 @@ To get this repository to your desired folder:
 - Twitter: [@ambrose_kibet](https://twitter.com/ambrose_kibet)
 - LinkedIn: [ambrose-kibet](https://www.linkedin.com/in/ambrose-kibet-56a791122/)
 
+👤 **Author2**
+
+- GitHub: [@ambrose-kibet](https://github.com/gsmalik030)
+- Twitter: [@ambrose_kibet](https://twitter.com/gsmalik030)
+- LinkedIn: [ambrose-kibet](https://www.linkedin.com/in/ghulam-subbhani-4b1281252/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
