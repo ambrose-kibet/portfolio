@@ -392,6 +392,7 @@ nav {
   width: 100vw;
   max-width: var(--max-width);
   background: #fff;
+  display: none;
 }
 
 .languages {
@@ -428,6 +429,10 @@ ul {
     width: 100%;
     max-width: var(--max-width);
     overflow: hidden;
+  }
+
+  .some-line {
+    display: flex;
   }
 
   .projects-title {
