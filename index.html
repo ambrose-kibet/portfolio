@@ -21,21 +21,22 @@
         <button class="nav-btn">
           <i class="fa fa-bars" aria-hidden="true"></i>
         </button>
+        <ul class="nav-links-container">
+          <li><a href="/portfolio">Portfolio</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/contact">Contact</a></li>
+          <li>
+            <a href="/contact"
+              ><img src="./assets/contact.svg" alt="contact icon"
+            /></a>
+          </li>
+        </ul>
       </nav>
     </header>
-    <main class="">
+    <main>
       <section class="main">
-        <div class="home-section">
-          <h1 class="section-title">Hey There. i'm Alex</h1>
-          <article class="info-container">
-            <h2 class="info-title">I'am a Software Developer</h2>
-            <p class="info">
-              I can help you build a product , feature or website Look through
-              some of my work and experience! If you like what you see and have
-              a project you need coded, don't hestiate to contact me.
-            </p>
-          </article>
-          <ul class="links-container">
+        <div class="generic-container">
+          <ul class="vertical-links-container">
             <li>
               <a href="http://https://github.com/ambrose-kibet" target="_blank"
                 ><img src="./assets/git.svg"
@@ -62,12 +63,62 @@
               /></a>
             </li>
           </ul>
+          <div class="home-section">
+            <h1 class="section-title">Hey There. i'm Alex</h1>
+            <article class="info-container">
+              <h2 class="info-title">I'am a Software Developer</h2>
+              <p class="info">
+                I can help you build a product , feature or website Look through
+                some of my work and experience! If you like what you see and
+                have a project you need coded, don't hestiate to contact me.
+              </p>
+            </article>
+            <ul class="links-container">
+              <li>
+                <a
+                  href="http://https://github.com/ambrose-kibet"
+                  target="_blank"
+                  ><img src="./assets/git.svg"
+                /></a>
+              </li>
+              <li>
+                <a
+                  href="http://https://github.com/ambrose-kibet"
+                  target="_blank"
+                  ><img src="./assets/linkedin.svg"
+                /></a>
+              </li>
+              <li>
+                <a
+                  href="http://https://github.com/ambrose-kibet"
+                  target="_blank"
+                  ><img src="./assets/angelist.svg"
+                /></a>
+              </li>
+              <li>
+                <a
+                  href="http://https://github.com/ambrose-kibet"
+                  target="_blank"
+                  ><img src="./assets/twitter.svg"
+                /></a>
+              </li>
+              <li>
+                <a
+                  href="http://https://github.com/ambrose-kibet"
+                  target="_blank"
+                  ><img src="./assets/medium.svg"
+                /></a>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <section class="section-container">
         <div class="container">
-          <h1 class="projects-title">My Recent Works</h1>
-
+          <div class="projects-title-container">
+            <h1 class="projects-title">My Recent Works</h1>
+            <div class="line"></div>
+          </div>
           <article class="project-card">
             <div class="card-header">
               <img
@@ -76,127 +127,131 @@
                 class="card-header-img"
               />
             </div>
-            <div class="card-body">
-              <h2 class="card-title">Multi-Post Stories</h2>
-              <p class="card-info">
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required. has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a
-                standard dummy text.
-              </p>
-              <div class="tech-container">
-                <span class="tech">css</span>
-                <span class="tech">html</span>
-                <span class="tech">bootstrap</span>
-                <span class="tech">Ruby</span>
+            <div>
+              <div class="card-body">
+                <h2 class="card-title">Multi-Post Stories</h2>
+                <p class="card-info">
+                  A daily selection of privately personalized reads; no accounts
+                  or sign-ups required. has been the industry's standard dummy
+                  text ever since the 1500s, when an unknown printer took a
+                  standard dummy text.
+                </p>
+                <div class="tech-container">
+                  <span class="tech">css</span>
+                  <span class="tech">html</span>
+                  <span class="tech">bootstrap</span>
+                  <span class="tech">Ruby</span>
+                </div>
+              </div>
+              <div class="card-footer">
+                <button class="btn">See Project</button>
               </div>
             </div>
-            <div class="card-footer">
-              <button class="btn">See Project</button>
-            </div>
           </article>
-          <article class="project-card-variant">
-            <div class="card-variant-body">
-              <h2 class="card-title">Profesional Art Printing Data</h2>
-              <p class="card-info">
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required. has been the industry's standard
-              </p>
-              <div class="tech-container">
-                <span class="tech">html</span>
-                <span class="tech">bootstrap</span>
-                <span class="tech">Ruby</span>
+          <div class="project-cards-container">
+            <article class="project-card-variant">
+              <div class="card-variant-body">
+                <h2 class="card-title">Profesional Art Printing Data</h2>
+                <p class="card-info">
+                  A daily selection of privately personalized reads; no accounts
+                  or sign-ups required. has been the industry's standard
+                </p>
+                <div class="tech-container">
+                  <span class="tech">html</span>
+                  <span class="tech">bootstrap</span>
+                  <span class="tech">Ruby</span>
+                </div>
               </div>
-            </div>
-            <div class="card-variant-footer">
-              <button class="btn btn-block">See Project</button>
-            </div>
-          </article>
-          <article class="project-card-variant">
-            <div class="card-variant-body">
-              <h2 class="card-title">Profesional Art Printing Data</h2>
-              <p class="card-info">
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required. has been the industry's standard
-              </p>
-              <div class="tech-container">
-                <span class="tech">html</span>
-                <span class="tech">bootstrap</span>
-                <span class="tech">Ruby</span>
+              <div class="card-variant-footer">
+                <button class="btn btn-block">See Project</button>
               </div>
-            </div>
-            <div class="card-variant-footer">
-              <button class="btn btn-block">See Project</button>
-            </div>
-          </article>
-          <article class="project-card-variant">
-            <div class="card-variant-body">
-              <h2 class="card-title">Profesional Art Printing Data</h2>
-              <p class="card-info">
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required. has been the industry's standard
-              </p>
-              <div class="tech-container">
-                <span class="tech">html</span>
-                <span class="tech">bootstrap</span>
-                <span class="tech">Ruby</span>
+            </article>
+            <article class="project-card-variant">
+              <div class="card-variant-body">
+                <h2 class="card-title">Profesional Art Printing Data</h2>
+                <p class="card-info">
+                  A daily selection of privately personalized reads; no accounts
+                  or sign-ups required. has been the industry's standard
+                </p>
+                <div class="tech-container">
+                  <span class="tech">html</span>
+                  <span class="tech">bootstrap</span>
+                  <span class="tech">Ruby</span>
+                </div>
               </div>
-            </div>
-            <div class="card-variant-footer">
-              <button class="btn btn-block">See Project</button>
-            </div>
-          </article>
-          <article class="project-card-variant">
-            <div class="card-variant-body">
-              <h2 class="card-title">Profesional Art Printing Data</h2>
-              <p class="card-info">
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required. has been the industry's standard
-              </p>
-              <div class="tech-container">
-                <span class="tech">html</span>
-                <span class="tech">bootstrap</span>
-                <span class="tech">Ruby</span>
+              <div class="card-variant-footer">
+                <button class="btn btn-block">See Project</button>
               </div>
-            </div>
-            <div class="card-variant-footer">
-              <button class="btn btn-block">See Project</button>
-            </div>
-          </article>
-          <article class="project-card-variant">
-            <div class="card-variant-body">
-              <h2 class="card-title">Profesional Art Printing Data</h2>
-              <p class="card-info">
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required. has been the industry's standard
-              </p>
-              <div class="tech-container">
-                <span class="tech">html</span>
-                <span class="tech">bootstrap</span>
-                <span class="tech">Ruby</span>
+            </article>
+            <article class="project-card-variant">
+              <div class="card-variant-body">
+                <h2 class="card-title">Profesional Art Printing Data</h2>
+                <p class="card-info">
+                  A daily selection of privately personalized reads; no accounts
+                  or sign-ups required. has been the industry's standard
+                </p>
+                <div class="tech-container">
+                  <span class="tech">html</span>
+                  <span class="tech">bootstrap</span>
+                  <span class="tech">Ruby</span>
+                </div>
               </div>
-            </div>
-            <div class="card-variant-footer">
-              <button class="btn btn-block">See Project</button>
-            </div>
-          </article>
-          <article class="project-card-variant">
-            <div class="card-variant-body">
-              <h2 class="card-title">Profesional Art Printing Data</h2>
-              <p class="card-info">
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required. has been the industry's standard
-              </p>
-              <div class="tech-container">
-                <span class="tech">html</span>
-                <span class="tech">bootstrap</span>
-                <span class="tech">Ruby</span>
+              <div class="card-variant-footer">
+                <button class="btn btn-block">See Project</button>
               </div>
-            </div>
-            <div class="card-variant-footer">
-              <button class="btn btn-block">See Project</button>
-            </div>
-          </article>
+            </article>
+            <article class="project-card-variant">
+              <div class="card-variant-body">
+                <h2 class="card-title">Profesional Art Printing Data</h2>
+                <p class="card-info">
+                  A daily selection of privately personalized reads; no accounts
+                  or sign-ups required. has been the industry's standard
+                </p>
+                <div class="tech-container">
+                  <span class="tech">html</span>
+                  <span class="tech">bootstrap</span>
+                  <span class="tech">Ruby</span>
+                </div>
+              </div>
+              <div class="card-variant-footer">
+                <button class="btn btn-block">See Project</button>
+              </div>
+            </article>
+            <article class="project-card-variant">
+              <div class="card-variant-body">
+                <h2 class="card-title">Profesional Art Printing Data</h2>
+                <p class="card-info">
+                  A daily selection of privately personalized reads; no accounts
+                  or sign-ups required. has been the industry's standard
+                </p>
+                <div class="tech-container">
+                  <span class="tech">html</span>
+                  <span class="tech">bootstrap</span>
+                  <span class="tech">Ruby</span>
+                </div>
+              </div>
+              <div class="card-variant-footer">
+                <button class="btn btn-block">See Project</button>
+              </div>
+            </article>
+            <article class="project-card-variant">
+              <div class="card-variant-body">
+                <h2 class="card-title">Profesional Art Printing Data</h2>
+                <p class="card-info">
+                  A daily selection of privately personalized reads; no accounts
+                  or sign-ups required. has been the industry's standard
+                </p>
+                <div class="tech-container">
+                  <span class="tech">html</span>
+                  <span class="tech">bootstrap</span>
+                  <span class="tech">Ruby</span>
+                </div>
+              </div>
+              <div class="card-variant-footer">
+                <button class="btn btn-block">See Project</button>
+              </div>
+            </article>
+          </div>
         </div>
       </section>
       <section class="about-section">
@@ -214,7 +269,7 @@
         </div>
       </section>
       <section class="section-container skills-section">
-        <div class="container">
+        <div class="container project-cards-container">
           <article class="languages">
             <h3 class="generic-title">
               <img src="./assets/language.png" alt="square" /> Language
@@ -263,12 +318,32 @@
             method="POST"
             class="contact-form"
           >
+            <div class="name-control">
+              <input
+                type="text"
+                name="firstname"
+                id="firstname"
+                class="form-input"
+                required
+                placeholder="First name"
+                max="30"
+              />
+              <input
+                type="text"
+                name="lastname"
+                id="lastname"
+                class="form-input"
+                required
+                placeholder="Last name"
+                max="30"
+              />
+            </div>
             <label for="name"></label>
             <input
               type="text"
               name="name"
               id="name"
-              class="form-input"
+              class="form-input full-name"
               required
               placeholder="Full name"
               max="30"
