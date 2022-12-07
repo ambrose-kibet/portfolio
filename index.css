@@ -387,6 +387,13 @@ nav {
   background: #1c1a19;
 }
 
+.some-line {
+  height: 1px;
+  width: 100vw;
+  max-width: var(--max-width);
+  background: #fff;
+}
+
 .languages {
   text-align: center;
 }
