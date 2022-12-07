@@ -209,7 +209,7 @@ nav {
 }
 
 .section-container {
-  background: #e5e5e5;
+  background: #fff;
   min-height: 100vh;
   display: grid;
   align-items: center;
