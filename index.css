@@ -15,7 +15,6 @@
 
 header {
   background: #3c3a39;
-
   display: flex;
   justify-content: center;
 }
@@ -27,7 +26,6 @@ nav {
   padding: 0.5rem 24px;
   justify-content: space-between;
   align-items: center;
-  max-width: var(--max-width);
   margin: auto auto;
 }
 
@@ -81,8 +79,8 @@ nav {
   }
 
   nav {
-    margin: auto 0;
-    padding: 8px 0px;
+    margin: auto 0.001px;
+    padding: 8px 0.001px;
     margin-left: 154px;
   }
 }
@@ -170,13 +168,8 @@ nav {
   padding: 4px 12px;
 }
 
-.links-container a {
-  height: 17px;
-  color: white;
-  text-decoration: none;
-  align-items: flex-start;
-  padding: 0.01rem 8px;
-  list-style-type: none;
+.links-container li a img {
+  margin: auto 10.5px;
 }
 
 @media screen and (min-width: 768px) {
@@ -197,7 +190,7 @@ nav {
   }
 
   .section-title {
-    margin: 0px;
+    margin: 0.001px;
   }
 
   .info-title {
@@ -272,7 +265,7 @@ nav {
 .card-body .tech-container,
 .card-variant-body .tech-container {
   width: fit-content;
-  margin: 24px 0px;
+  margin: 24px 0.001px;
   display: flex;
   justify-content: left;
 }
@@ -286,7 +279,7 @@ nav {
   color: #091e42;
   background: #fff;
   border: 1px solid #8993a4;
-  margin: 0px 12px 0px 0px;
+  margin: 0.001px 12px 0.001px 0.001px;
 }
 
 .btn {
@@ -595,6 +588,7 @@ footer {
 @media screen and (min-width: 768px) {
   .contact-info {
     text-align: left;
+    margin-top: 3.5rem;
   }
 
   .contact-section {
@@ -622,9 +616,5 @@ footer {
 
   .full-name {
     display: none;
-  }
-
-  .contact-info {
-    margin-top: 3.5rem;
   }
 }
