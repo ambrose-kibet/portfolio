@@ -373,7 +373,7 @@ nav {
   height: 1pt;
   background-color: #212121;
   width: 100%;
-  margin: auto 0rem auto 1.5rem;
+  margin: auto 0.001px auto 1.5rem;
 }
 
 .project-cards-container {
