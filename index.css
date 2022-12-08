@@ -293,6 +293,7 @@ nav {
   color: #fff;
   background: #ff6b00;
   border: none;
+  transition: all 0.7s ease-in-out;
 }
 
 .btn:hover {
