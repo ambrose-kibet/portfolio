@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Crete+Round:400");
-@import url("https://fonts.googleapis.com/css?family=Poppins:400");
+@import url('https://fonts.googleapis.com/css?family=Crete+Round:400');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400');
 
 *,
 ::after,
@@ -32,7 +32,7 @@ nav {
 .nav-logo {
   color: white;
   text-transform: capitalize;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -59,7 +59,7 @@ nav {
 
 .nav-links-container li a {
   text-decoration: none;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 15px;
@@ -103,7 +103,7 @@ ul {
 }
 
 .footer-variant li {
-  padding: auto 10.5px;
+  padding: 0.0001px 10.5px;
 }
 
 .sidebar * {
@@ -126,7 +126,7 @@ ul {
 }
 
 .nav-link {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -164,7 +164,7 @@ ul {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  background-image: url("./assets//Group.png");
+  background-image: url('./assets//Group.png');
   background-position-x: 100%;
   background-position-y: 111.63%;
   background-repeat: no-repeat;
@@ -184,7 +184,7 @@ ul {
 }
 
 .section-title {
-  font-family: "Crete Round", sans-serif;
+  font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 56px;
@@ -196,7 +196,7 @@ ul {
 }
 
 .info-title {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -211,7 +211,7 @@ ul {
 }
 
 .info {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -231,7 +231,6 @@ ul {
   width: fit-content;
   padding: 0 12px;
   margin-right: 87px;
-  height: fit-content;
 }
 
 .links-container {
@@ -246,7 +245,7 @@ ul {
 @media screen and (min-width: 768px) {
   .main {
     min-height: 798px;
-    background-image: url("./assets/Group-large.png");
+    background-image: url('./assets/Group-large.png');
     background-position-x: 101%;
     background-position-y: 100%;
     justify-content: left;
@@ -289,11 +288,11 @@ ul {
 
 .container {
   width: 327px;
-  display: flexbox;
+  display: grid;
 }
 
 .projects-title {
-  font-family: "Crete Round", sans-serif;
+  font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
@@ -316,7 +315,7 @@ ul {
 }
 
 .card-title {
-  font-family: "Crete Round", sans-serif;
+  font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
@@ -325,7 +324,7 @@ ul {
 }
 
 .card-info {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -342,7 +341,7 @@ ul {
 }
 
 .tech {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -355,7 +354,7 @@ ul {
 
 .btn {
   padding: 12px;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -387,7 +386,7 @@ ul {
 }
 
 .project-card-variant {
-  background-image: url("./assets/card-bg.png");
+  background-image: url('./assets/card-bg.png');
   background-size: cover;
   min-height: 386px;
   width: 100%;
@@ -424,7 +423,7 @@ ul {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  background-image: url("./assets/about-bg.png");
+  background-image: url('./assets/about-bg.png');
   background-position-x: 100%;
   background-position-y: 100%;
   background-repeat: no-repeat;
@@ -448,7 +447,7 @@ ul {
 }
 
 .project-cards-container {
-  display: flexbox;
+  display: grid;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
@@ -471,7 +470,7 @@ ul {
 }
 
 .generic-title {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -480,7 +479,7 @@ ul {
 }
 
 .generic-info {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
@@ -541,7 +540,7 @@ ul {
   }
 
   .about-section {
-    background-image: url("./assets/illustration-about\ me.svg");
+    background-image: url('./assets/illustration-about\ me.svg');
     background-position-x: 100%;
     background-position-y: 50%;
   }
@@ -579,7 +578,7 @@ ul {
 }
 
 .contact-info {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -606,7 +605,7 @@ ul {
 }
 
 .form-input::placeholder {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
