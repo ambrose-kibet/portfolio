@@ -10,7 +10,7 @@ closeBtn.addEventListener('click', () => {
 });
 
 navLinks.forEach((link) => {
-  link.addEventListener('click', (e) => {
+  link.addEventListener('click', () => {
     sidebar.classList.remove('show-sidebar');
   });
 });
