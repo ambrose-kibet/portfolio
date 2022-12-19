@@ -1,11 +1,11 @@
-const closeBtn = document.querySelector('.close-btn');
-const openBtn = document.querySelector('.nav-btn');
+const collapseBtn = document.querySelector('.close-btn');
+const expandBtn = document.querySelector('.nav-btn');
 const sidebar = document.querySelector('.sidebar');
 const navLinks = document.querySelectorAll('.nav-link');
-openBtn.addEventListener('click', () => {
+expandBtn.addEventListener('click', () => {
   sidebar.classList.add('show-sidebar');
 });
-closeBtn.addEventListener('click', () => {
+collapseBtn.addEventListener('click', () => {
   sidebar.classList.remove('show-sidebar');
 });
 
