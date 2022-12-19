@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Crete+Round:400");
-@import url("https://fonts.googleapis.com/css?family=Poppins:400");
+@import url('https://fonts.googleapis.com/css?family=Crete+Round:400');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400');
 
 *,
 ::after,
@@ -32,7 +32,7 @@ nav {
 .nav-logo {
   color: white;
   text-transform: capitalize;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -59,7 +59,7 @@ nav {
 
 .nav-links-container li a {
   text-decoration: none;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 15px;
@@ -67,12 +67,82 @@ nav {
 }
 
 .nav-links-container :last-child {
-  margin-right: none;
+  margin-right: 0.0001px;
+}
+
+.sidebar {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #3c3a39;
+  justify-content: center;
+  align-items: flex-start;
+  box-shadow: 0.0001px 48px 48px rgba(37, 47, 137, 0.08);
+}
+
+.close-btn {
+  background: transparent;
+  border: none;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.close-icon {
+  width: 100%;
+  height: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.footer-variant li {
+  padding: 0.0001px 10.5px;
+}
+
+.sidebar * {
+  text-decoration: none;
+  list-style-type: none;
+  color: white;
+}
+
+.sidebar ul {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 80%;
+}
+
+.sidebar ul li {
+  border-bottom: 1px solid #6f6c6b;
+  padding: 10px;
+}
+
+.nav-link {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.show-sidebar {
+  display: flex;
 }
 
 @media screen and (min-width: 768px) {
   .nav-links-container {
     display: flex;
+  }
+
+  .sidebar {
+    display: none;
   }
 
   .nav-btn {
@@ -94,7 +164,7 @@ nav {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  background-image: url("./assets//Group.png");
+  background-image: url('./assets//Group.png');
   background-position-x: 100%;
   background-position-y: 111.63%;
   background-repeat: no-repeat;
@@ -114,7 +184,7 @@ nav {
 }
 
 .section-title {
-  font-family: "Crete Round", sans-serif;
+  font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 56px;
@@ -126,7 +196,7 @@ nav {
 }
 
 .info-title {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -141,7 +211,7 @@ nav {
 }
 
 .info {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -161,7 +231,6 @@ nav {
   width: fit-content;
   padding: 0 12px;
   margin-right: 87px;
-  height: fit-content;
 }
 
 .links-container {
@@ -176,7 +245,7 @@ nav {
 @media screen and (min-width: 768px) {
   .main {
     min-height: 798px;
-    background-image: url("./assets/Group-large.png");
+    background-image: url('./assets/Group-large.png');
     background-position-x: 101%;
     background-position-y: 100%;
     justify-content: left;
@@ -219,11 +288,11 @@ nav {
 
 .container {
   width: 327px;
-  display: flexbox;
+  display: grid;
 }
 
 .projects-title {
-  font-family: "Crete Round", sans-serif;
+  font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
@@ -246,7 +315,7 @@ nav {
 }
 
 .card-title {
-  font-family: "Crete Round", sans-serif;
+  font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
@@ -255,7 +324,7 @@ nav {
 }
 
 .card-info {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -272,7 +341,7 @@ nav {
 }
 
 .tech {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -285,7 +354,7 @@ nav {
 
 .btn {
   padding: 12px;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -293,7 +362,6 @@ nav {
   color: #fff;
   background: #ff6b00;
   border: none;
-  transition: all 0.7s ease-in-out;
 }
 
 .btn:hover {
@@ -318,7 +386,7 @@ nav {
 }
 
 .project-card-variant {
-  background-image: url("./assets/card-bg.png");
+  background-image: url('./assets/card-bg.png');
   background-size: cover;
   min-height: 386px;
   width: 100%;
@@ -355,7 +423,7 @@ nav {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  background-image: url("./assets/about-bg.png");
+  background-image: url('./assets/about-bg.png');
   background-position-x: 100%;
   background-position-y: 100%;
   background-repeat: no-repeat;
@@ -379,7 +447,7 @@ nav {
 }
 
 .project-cards-container {
-  display: flexbox;
+  display: grid;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
@@ -402,7 +470,7 @@ nav {
 }
 
 .generic-title {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -411,7 +479,7 @@ nav {
 }
 
 .generic-info {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
@@ -420,10 +488,6 @@ nav {
   align-items: center;
   text-align: center;
   color: #fff;
-}
-
-ul {
-  list-style-type: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -476,7 +540,7 @@ ul {
   }
 
   .about-section {
-    background-image: url("./assets/illustration-about\ me.svg");
+    background-image: url('./assets/illustration-about\ me.svg');
     background-position-x: 100%;
     background-position-y: 50%;
   }
@@ -514,7 +578,7 @@ ul {
 }
 
 .contact-info {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -541,7 +605,7 @@ ul {
 }
 
 .form-input::placeholder {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -574,10 +638,6 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.footer-variant li {
-  padding: auto 10.5px;
 }
 
 .underline {

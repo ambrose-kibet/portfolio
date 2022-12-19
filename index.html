@@ -22,9 +22,9 @@
           <i class="fa fa-bars" aria-hidden="true"></i>
         </button>
         <ul class="nav-links-container">
-          <li><a href="/portfolio">Portfolio</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/contact">Contact</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
           <li>
             <a href="/contact"
               ><img src="./assets/contact.svg" alt="contact icon"
@@ -32,6 +32,21 @@
           </li>
         </ul>
       </nav>
+      <!-- sidebar -->
+      <aside class="sidebar">
+        <button type="button" class="close-btn">
+          <img
+            src="./assets/close-iconl.svg"
+            alt="close-icon"
+            class="close-icon"
+          />
+        </button>
+        <ul>
+          <li><a href="#portfolio" class="nav-link"> Portfolio</a></li>
+          <li><a href="#about" class="nav-link">About </a></li>
+          <li><a href="#contact" class="nav-link">Contact </a></li>
+        </ul>
+      </aside>
     </header>
     <main>
       <section class="main">
@@ -113,7 +128,7 @@
           </div>
         </div>
       </section>
-      <section class="section-container">
+      <section class="section-container" id="portfolio">
         <div class="container">
           <div class="projects-title-container">
             <h1 class="projects-title">My Recent Works</h1>
@@ -254,7 +269,7 @@
           </div>
         </div>
       </section>
-      <section class="about-section">
+      <section class="about-section" id="about">
         <div class="container">
           <h1 class="section-title about-title">About me</h1>
           <article class="info-container">
@@ -308,7 +323,7 @@
           </article>
         </div>
       </section>
-      <section class="section-container contact-section">
+      <section class="section-container contact-section" id="contact">
         <div class="container">
           <h2 class="contact-info">
             I'm always interested in hearing about new projects, so if you'd
@@ -405,5 +420,6 @@
         <div class="underline"></div>
       </div>
     </footer>
+    <script src="index.js"></script>
   </body>
 </html>
