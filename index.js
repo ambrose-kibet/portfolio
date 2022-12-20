@@ -4,7 +4,7 @@ const sidebar = document.querySelector('.sidebar');
 const navLinks = document.querySelectorAll('.nav-link');
 const openModal = document.querySelectorAll('.pop-toggler');
 const modal = document.querySelector('.modal-overlay');
-// const closeModal = document.querySelector('.close-modal');
+const closeModal = document.querySelector('.close-modal');
 const modalContainer = document.querySelector('.modal-header');
 const projects = [
   {
@@ -115,4 +115,7 @@ openModal.forEach((btn) => {
     modal.classList.add('show-modal');
   });
 });
-// add code here and uncommet line 7
+
+closeModal.addEventListener('click', () => {
+  modal.classList.remove('show-modal');
+});
