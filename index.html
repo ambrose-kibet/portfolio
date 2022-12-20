@@ -129,11 +129,24 @@
         </div>
       </section>
       <section class="section-container" id="portfolio">
+        <aside class="modal-overlay">
+          <article class="modal">
+            <div class="modal-header"></div>
+            <button type="button" class="close-modal">
+              <img
+                src="./assets/close-iconl.svg"
+                alt="close-icon"
+                class="close-icon"
+              />
+            </button>
+          </article>
+        </aside>
         <div class="container">
           <div class="projects-title-container">
             <h1 class="projects-title">My Recent Works</h1>
             <div class="line"></div>
           </div>
+
           <article class="project-card">
             <div class="card-header">
               <img
@@ -142,7 +155,7 @@
                 class="card-header-img"
               />
             </div>
-            <div>
+            <div data-name="stories">
               <div class="card-body">
                 <h2 class="card-title">Multi-Post Stories</h2>
                 <p class="card-info">
@@ -159,12 +172,12 @@
                 </div>
               </div>
               <div class="card-footer">
-                <button class="btn">See Project</button>
+                <button class="btn pop-toggler">See Project</button>
               </div>
             </div>
           </article>
           <div class="project-cards-container">
-            <article class="project-card-variant printing">
+            <article class="project-card-variant printing" data-name="printing">
               <div class="card-variant-body">
                 <h2 class="card-title">Profesional Art Printing Data</h2>
                 <p class="card-info">
@@ -178,10 +191,13 @@
                 </div>
               </div>
               <div class="card-variant-footer">
-                <button class="btn btn-block">See Project</button>
+                <button class="btn btn-block pop-toggler">See Project</button>
               </div>
             </article>
-            <article class="project-card-variant dashboard">
+            <article
+              class="project-card-variant dashboard"
+              data-name="dashboard"
+            >
               <div class="card-variant-body">
                 <h2 class="card-title">Data Dashboard Healthcare</h2>
                 <p class="card-info">
@@ -195,10 +211,13 @@
                 </div>
               </div>
               <div class="card-variant-footer">
-                <button class="btn btn-block">See Project</button>
+                <button class="btn btn-block pop-toggler">See Project</button>
               </div>
             </article>
-            <article class="project-card-variant portfolio">
+            <article
+              class="project-card-variant portfolio"
+              data-name="portfolio"
+            >
               <div class="card-variant-body">
                 <h2 class="card-title">Website Protfolio</h2>
                 <p class="card-info">
@@ -212,10 +231,10 @@
                 </div>
               </div>
               <div class="card-variant-footer">
-                <button class="btn btn-block">See Project</button>
+                <button class="btn btn-block pop-toggler">See Project</button>
               </div>
             </article>
-            <article class="project-card-variant printing">
+            <article class="project-card-variant printing" data-name="printing">
               <div class="card-variant-body">
                 <h2 class="card-title">Profesional Art Printing Data</h2>
                 <p class="card-info">
@@ -229,10 +248,13 @@
                 </div>
               </div>
               <div class="card-variant-footer">
-                <button class="btn btn-block">See Project</button>
+                <button class="btn btn-block pop-toggler">See Project</button>
               </div>
             </article>
-            <article class="project-card-variant dashboard">
+            <article
+              class="project-card-variant dashboard"
+              data-name="dashboard"
+            >
               <div class="card-variant-body">
                 <h2 class="card-title">Data Dashboard Healthcare</h2>
                 <p class="card-info">
@@ -246,10 +268,13 @@
                 </div>
               </div>
               <div class="card-variant-footer">
-                <button class="btn btn-block">See Project</button>
+                <button class="btn btn-block pop-toggler">See Project</button>
               </div>
             </article>
-            <article class="project-card-variant portfolio">
+            <article
+              class="project-card-variant portfolio"
+              data-name="portfolio"
+            >
               <div class="card-variant-body">
                 <h2 class="card-title">Website Protfolio</h2>
                 <p class="card-info">
@@ -263,7 +288,7 @@
                 </div>
               </div>
               <div class="card-variant-footer">
-                <button class="btn btn-block">See Project</button>
+                <button class="btn btn-block pop-toggler">See Project</button>
               </div>
             </article>
           </div>

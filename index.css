@@ -70,20 +70,23 @@ nav {
   margin-right: 0.0001px;
 }
 
-.sidebar {
+.sidebar,
+.modal-overlay {
   display: none;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  min-height: 100%;
+
   background: #3c3a39;
   justify-content: center;
   align-items: flex-start;
   box-shadow: 0.0001px 48px 48px rgba(37, 47, 137, 0.08);
 }
 
-.close-btn {
+.close-btn,
+.close-modal {
   background: transparent;
   border: none;
   position: absolute;
@@ -362,6 +365,9 @@ ul {
   color: #fff;
   background: #ff6b00;
   border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .btn:hover {
@@ -701,5 +707,74 @@ footer {
 
   .full-name {
     display: none;
+  }
+}
+
+.modal-overlay {
+  background: #97949325;
+  align-items: center;
+  z-index: 9;
+}
+
+.show-modal {
+  display: flex;
+}
+
+.modal {
+  width: 92vw;
+  background: #fff;
+  max-width: 1156px;
+  min-height: 80vh;
+  position: relative;
+  padding: 1.5rem;
+  margin: auto auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tech-container {
+  width: fit-content;
+  margin: 24px 0.001px;
+  display: flex;
+  justify-content: left;
+}
+
+.pop-img-container {
+  width: 100%;
+  height: 220px;
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.btns-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btns-container a {
+  margin: auto 10px auto 0;
+}
+
+@media screen and (min-width: 768px) {
+  .pop-img-container {
+    min-height: 400px;
+    height: 50vh;
+    max-height: 448px;
+  }
+
+  .btns-container {
+    justify-content: left;
+  }
+  .modal {
+    min-height: auto;
+  }
+
+  .modal-body {
+    margin-top: 0.000001px;
   }
 }
