@@ -53,6 +53,10 @@ nav {
   display: none;
 }
 
+.btns-container a {
+  margin: auto 10px auto 0;
+}
+
 .nav-links-container li {
   margin: 2px 16px;
 }
@@ -78,7 +82,6 @@ nav {
   left: 0;
   width: 100%;
   min-height: 100%;
-
   background: #3c3a39;
   justify-content: center;
   align-items: flex-start;
@@ -336,7 +339,8 @@ ul {
 }
 
 .card-body .tech-container,
-.card-variant-body .tech-container {
+.card-variant-body .tech-container,
+.tech-container {
   width: fit-content;
   margin: 24px 0.001px;
   display: flex;
@@ -733,13 +737,6 @@ footer {
   justify-content: space-between;
 }
 
-.tech-container {
-  width: fit-content;
-  margin: 24px 0.001px;
-  display: flex;
-  justify-content: left;
-}
-
 .pop-img-container {
   width: 100%;
   height: 220px;
@@ -756,10 +753,6 @@ footer {
   justify-content: space-between;
 }
 
-.btns-container a {
-  margin: auto 10px auto 0;
-}
-
 @media screen and (min-width: 768px) {
   .pop-img-container {
     min-height: 400px;
@@ -770,6 +763,7 @@ footer {
   .btns-container {
     justify-content: left;
   }
+
   .modal {
     min-height: auto;
   }

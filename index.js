@@ -4,7 +4,7 @@ const sidebar = document.querySelector('.sidebar');
 const navLinks = document.querySelectorAll('.nav-link');
 const openModal = document.querySelectorAll('.pop-toggler');
 const modal = document.querySelector('.modal-overlay');
-const closeModal = document.querySelector('.close-modal');
+// const closeModal = document.querySelector('.close-modal');
 const modalContainer = document.querySelector('.modal-header');
 const projects = [
   {
@@ -74,7 +74,7 @@ openModal.forEach((btn) => {
     const { title, info, tech, src, live, sourceCode } = projects.find(
       (item) => item.name === projectName
     );
-    let modalContent = `<h3 class="card-title">
+    const modalContent = `<h3 class="card-title">
                   ${title}
                 </h3>
                 <ul class="tech-container">
