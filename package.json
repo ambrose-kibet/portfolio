@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/ambrose-kibet/portfolio/issues"
   },
-  "homepage": "https://github.com/ambrose-kibet/portfolio#readme"
+  "homepage": "https://github.com/ambrose-kibet/portfolio#readme",
+  "devDependencies": {
+    "eslint": "^8.30.0"
+  }
 }

@@ -108,3 +108,4 @@ openModal.forEach((btn) => {
     modal.classList.add('show-modal');
   });
 });
+// add code here and uncommet line 7

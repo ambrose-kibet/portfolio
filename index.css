@@ -338,8 +338,6 @@ ul {
   color: #091e42;
 }
 
-.card-body .tech-container,
-.card-variant-body .tech-container,
 .tech-container {
   width: fit-content;
   margin: 24px 0.001px;
