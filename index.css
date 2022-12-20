@@ -386,7 +386,6 @@ ul {
 }
 
 .project-card-variant {
-  background-image: url('./assets/card-bg.png');
   background-size: cover;
   min-height: 386px;
   width: 100%;
@@ -394,6 +393,18 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.printing {
+  background-image: url('./assets/card-bg.png');
+}
+
+.dashboard {
+  background-image: url('./assets/dashboard-card.png');
+}
+
+.portfolio {
+  background-image: url('./assets/porfolio-card.png');
 }
 
 .card-variant-body {
