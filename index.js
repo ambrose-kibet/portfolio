@@ -71,8 +71,15 @@ navLinks.forEach((link) => {
 openModal.forEach((btn) => {
   btn.addEventListener('click', (e) => {
     const projectName = e.target.parentElement.parentElement.dataset.name;
-    const { title, info, tech, src, live, sourceCode } = projects.find(
-      (item) => item.name === projectName
+      const {
+      title,
+      info,
+      tech,
+      src,
+      live,
+      sourceCode,
+    } = projects.find(
+      (item) => item.name === projectName,
     );
     const modalContent = `<h3 class="card-title">
                   ${title}
