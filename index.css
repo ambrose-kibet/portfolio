@@ -53,6 +53,10 @@ nav {
   display: none;
 }
 
+.btns-container a {
+  margin: auto 10px auto 0;
+}
+
 .nav-links-container li {
   margin: 2px 16px;
 }
@@ -70,20 +74,22 @@ nav {
   margin-right: 0.0001px;
 }
 
-.sidebar {
+.sidebar,
+.modal-overlay {
   display: none;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  min-height: 100%;
   background: #3c3a39;
   justify-content: center;
   align-items: flex-start;
   box-shadow: 0.0001px 48px 48px rgba(37, 47, 137, 0.08);
 }
 
-.close-btn {
+.close-btn,
+.close-modal {
   background: transparent;
   border: none;
   position: absolute;
@@ -332,8 +338,7 @@ ul {
   color: #091e42;
 }
 
-.card-body .tech-container,
-.card-variant-body .tech-container {
+.tech-container {
   width: fit-content;
   margin: 24px 0.001px;
   display: flex;
@@ -362,6 +367,9 @@ ul {
   color: #fff;
   background: #ff6b00;
   border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .btn:hover {
@@ -385,6 +393,12 @@ ul {
   text-align: center;
 }
 
+.projects {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
 .project-card-variant {
   background-size: cover;
   min-height: 386px;
@@ -405,6 +419,18 @@ ul {
 
 .portfolio {
   background-image: url('./assets/porfolio-card.png');
+}
+
+@media screen and (min-width: 768px) {
+  .project-card-variant {
+    width: 32%;
+    min-height: 432px;
+  }
+
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .card-variant-body {
@@ -447,6 +473,7 @@ ul {
 
 .projects-title-container {
   text-align: center;
+  min-width: 100%;
 }
 
 .line {
@@ -701,5 +728,64 @@ footer {
 
   .full-name {
     display: none;
+  }
+}
+
+.modal-overlay {
+  background: #0a0908de;
+  align-items: center;
+  z-index: 9;
+}
+
+.show-modal {
+  display: flex;
+}
+
+.modal {
+  width: 92vw;
+  background: #fff;
+  max-width: 1156px;
+  min-height: 80vh;
+  position: relative;
+  padding: 1.5rem;
+  margin: auto auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.pop-img-container {
+  width: 100%;
+  height: 220px;
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.btns-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+  .pop-img-container {
+    min-height: 400px;
+    height: 50vh;
+    max-height: 448px;
+  }
+
+  .btns-container {
+    justify-content: left;
+  }
+
+  .modal {
+    min-height: auto;
+  }
+
+  .modal-body {
+    margin-top: 0.000001px;
   }
 }
