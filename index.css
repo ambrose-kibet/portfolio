@@ -393,6 +393,12 @@ ul {
   text-align: center;
 }
 
+.projects{
+  display:  grid;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
 .project-card-variant {
   background-size: cover;
   min-height: 386px;
@@ -405,14 +411,28 @@ ul {
 
 .printing {
   background-image: url('./assets/card-bg.png');
+
 }
 
 .dashboard {
   background-image: url('./assets/dashboard-card.png');
+   
 }
 
 .portfolio {
-  background-image: url('./assets/porfolio-card.png');
+  background-image: url('./assets/porfolio-card.png'); 
+}
+
+@media screen and (min-width:768px) {
+  .project-card-variant{
+  width: 32%;
+  min-height: 432px;
+  }
+
+  .projects{
+  display:  flex;
+  flex-wrap: wrap;
+}
 }
 
 .card-variant-body {
@@ -455,6 +475,7 @@ ul {
 
 .projects-title-container {
   text-align: center;
+  min-width: 100%
 }
 
 .line {
@@ -713,7 +734,7 @@ footer {
 }
 
 .modal-overlay {
-  background: #97949325;
+  background: #0a0908de;
   align-items: center;
   z-index: 9;
 }
