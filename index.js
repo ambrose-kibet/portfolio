@@ -195,8 +195,14 @@ closeModal.addEventListener('click', () => {
   modal.classList.remove('show-modal');
 });
 // Add code here
-
-
+const showAlert = (info, type) => {
+  formStatus.classList.add(type);
+  formStatus.textContent = info;
+  setTimeout(() => {
+    formStatus.classList.remove(type);
+    formStatus.textContent = '';
+  }, 3000);
+};
 // 
 contactForm.addEventListener('submit', async (e) => {
   e.preventDefault();
