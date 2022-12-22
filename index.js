@@ -9,6 +9,17 @@ const projectsContainer = document.getElementById('projects');
 const contactForm = document.querySelector('.contact-form');
 const email = document.getElementById('email');
 const formStatus = document.getElementById('my-form-status');
+const formInput = document.querySelectorAll('.form-input');
+const getLocalStorage = () => {
+  let contact = {};
+  if (localStorage.getItem('contact')) {
+    contact = JSON.parse(localStorage.getItem('contact'));
+  }
+
+  return contact;
+};
+
+const contactDetails = getLocalStorage();
 const projects = [
   {
     name: 'stories',
@@ -203,7 +214,7 @@ const showAlert = (info, type) => {
     formStatus.textContent = '';
   }, 3000);
 };
-// 
+//
 contactForm.addEventListener('submit', async (e) => {
   e.preventDefault();
 
@@ -226,6 +237,7 @@ contactForm.addEventListener('submit', async (e) => {
     if (response.ok) {
       showAlert('Thanks for your submission!', 'success');
       contactForm.reset();
+      localStorage.removeItem('contact');
     } else {
       response.json().then((data) => {
         if (Object.hasOwn(data, 'errors')) {
@@ -238,5 +250,19 @@ contactForm.addEventListener('submit', async (e) => {
   }).catch((error) => {
     showAlert('Oops! There was a problem submitting your form', 'danger');
     console.log(error);
+  });
+});
+formInput.forEach((inputfield) => {
+  inputfield.addEventListener('input', (event) => {
+    const { name } = event.target;
+    const { value } = event.target;
+    contactDetails[name] = value;
+    localStorage.setItem('contact', JSON.stringify(contactDetails));
+  });
+});
+
+window.addEventListener('DOMContentLoaded', () => {
+  formInput.forEach((inpfield) => {
+    inpfield.value = contactDetails[inpfield.name] || '';
   });
 });
