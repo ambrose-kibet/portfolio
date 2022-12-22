@@ -799,18 +799,18 @@ footer {
 }
 
 .alert {
- text-transform: capitalize;
- font-size: 1rem;
- font-family: 'Inter', sans-serif;
- font-style: normal;
- font-weight: 400;
- display: none;
- margin-left: 2rem;
+  text-transform: capitalize;
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  display: none;
+  margin-left: 2rem;
 }
 
 .danger {
   color: red;
-   display: inline;
+  display: inline;
 }
 
 .success {
