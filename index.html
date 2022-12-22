@@ -201,32 +201,13 @@
             method="POST"
             class="contact-form"
           >
-            <div class="name-control">
-              <input
-                type="text"
-                name="firstname"
-                id="firstname"
-                class="form-input"
-                required
-                placeholder="First name"
-                max="30"
-              />
-              <input
-                type="text"
-                name="lastname"
-                id="lastname"
-                class="form-input"
-                required
-                placeholder="Last name"
-                max="30"
-              />
-            </div>
+        
             <label for="name"></label>
             <input
               type="text"
               name="name"
               id="name"
-              class="form-input full-name"
+              class="form-input"
               required
               placeholder="Full name"
               max="30"
@@ -250,7 +231,9 @@
               max="500"
               placeholder="Enter text here"
             ></textarea>
-            <button type="submit" class="btn btn-center">Get in touch</button>
+            <div class="form-footer">
+            <button type="submit" class="btn btn-center">Get in touch</button>  <p class="alert" id="my-form-status"></p>
+          </div>
           </form>
         </div>
       </section>

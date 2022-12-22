@@ -713,6 +713,13 @@ footer {
     gap: 1.5rem;
   }
 
+  .form-footer {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
   .btn-center {
     margin: 24px 0;
     width: fit-content;
@@ -788,4 +795,24 @@ footer {
   .modal-body {
     margin-top: 0.000001px;
   }
+}
+
+.alert {
+  text-transform: capitalize;
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  display: none;
+  margin-left: 2rem;
+}
+
+.danger {
+  color: red;
+  display: inline;
+}
+
+.success {
+  color: rgb(8, 235, 8);
+  display: inline;
 }
