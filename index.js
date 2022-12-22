@@ -253,16 +253,16 @@ contactForm.addEventListener('submit', async (e) => {
   });
 });
 formInput.forEach((inputfield) => {
-  inputfield.addEventListener('input', (e) => {
-    const { name } = e.target;
-    const { value } = e.target;
+  inputfield.addEventListener('input', (event) => {
+    const { name } = event.target;
+    const { value } = event.target;
     contactDetails[name] = value;
     localStorage.setItem('contact', JSON.stringify(contactDetails));
   });
 });
 
 window.addEventListener('DOMContentLoaded', () => {
-  formInput.forEach((inputfield) => {
-    inputfield.value = contactDetails[inputfield.name] || '';
+  formInput.forEach((inpfield) => {
+    inpfield.value = contactDetails[inpfield.name] || '';
   });
 });
