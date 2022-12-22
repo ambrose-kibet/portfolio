@@ -6,6 +6,9 @@ const modal = document.querySelector('.modal-overlay');
 const closeModal = document.querySelector('.close-modal');
 const modalContainer = document.querySelector('.modal-header');
 const projectsContainer = document.getElementById('projects');
+const contactForm = document.querySelector('.contact-form');
+const email = document.getElementById('email');
+const formStatus = document.getElementById('my-form-status');
 const projects = [
   {
     name: 'stories',
@@ -116,7 +119,6 @@ window.addEventListener('DOMContentLoaded', () => {
     article.classList.add(name);
     article.classList.add('card');
     article.dataset.name = name;
-
     article.innerHTML = `<div class="card-variant-body">
                 <h2 class="card-title">${title}</h2>
                 <p class="card-info">
@@ -133,7 +135,6 @@ window.addEventListener('DOMContentLoaded', () => {
     return projectsContainer.appendChild(article);
   });
   const children = [...projectsContainer.children];
-  console.log(children);
   children.forEach((child) => {
     if (child.classList.contains('card')) {
       let projButton;
@@ -183,7 +184,6 @@ window.addEventListener('DOMContentLoaded', () => {
                   </div>
                 </div>
               `;
-
         modalContainer.innerHTML = modalContent;
         modal.classList.add('show-modal');
       });
@@ -193,4 +193,44 @@ window.addEventListener('DOMContentLoaded', () => {
 
 closeModal.addEventListener('click', () => {
   modal.classList.remove('show-modal');
+});
+// Add code here
+
+
+// 
+contactForm.addEventListener('submit', async (e) => {
+  e.preventDefault();
+
+  if (/[A-Z]/.test(email.value)) {
+    showAlert('email should be lowercase', 'danger');
+    return;
+  }
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) {
+    showAlert('please  provide a valid email', 'danger');
+    return;
+  }
+  const data = new FormData(e.target);
+  fetch(e.target.action, {
+    method: contactForm.method,
+    body: data,
+    headers: {
+      Accept: 'application/json',
+    },
+  }).then((response) => {
+    if (response.ok) {
+      showAlert('Thanks for your submission!', 'success');
+      contactForm.reset();
+    } else {
+      response.json().then((data) => {
+        if (Object.hasOwn(data, 'errors')) {
+          showAlert(`${data.errors.map((error) => error.message).join(', ')}`, 'danger');
+        } else {
+          showAlert('Oops! There was a problem submitting your form', 'danger');
+        }
+      });
+    }
+  }).catch((error) => {
+    showAlert('Oops! There was a problem submitting your form', 'danger');
+    console.log(error);
+  });
 });
